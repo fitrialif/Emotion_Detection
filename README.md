@@ -10,7 +10,7 @@ Description available in english and italian below.
 ## English
 Emotion Detection is a project realized by me for the Computer Vision exam of the Politecnico di Torino, together with the Dataset Preparation programs, available through the links at the bottom; it was built in Java using the Eclipse development environment, and uses Apache Maven, the OpenCV and DL4J libraries and the Maven JavaFX plugin.
 
-This program allows you to capture the user's face via webcam, make a prediction of the emotion among the 7 available (anger, disgust, fear, happiness, neutrality, sadness and surprise) and show the results; for design choices, it is markedly single-user: if there are more people in the captured image, only one face will be selected and processed.
+This program allows you to capture the user's face via webcam, make a prediction of the emotion among the 7 available (anger, disgust, fear, happiness, neutral, sadness and surprise) and show the results; for design choices, it is markedly single-user: if there are more people in the captured image, only one face will be selected and processed.
 
 The software has a clean interface, with:
 - a large box to show images captured by webcam;
@@ -25,7 +25,7 @@ Emotion Detection: happiness case.
 
 The program is testable by creating a Maven configuration with goal jfx:run: a .jar file will be created and executed in the /target/jfx/app/ directory; for working correctly, it is necessary that in the ./lib/ folder relative to the file .jar position there are:
 - the .xml file containing the information for the Haar detection (haarcascade_frontalface_alt.xml);
-- the file containing the pre-trained neural network with the CK + dataset (ck + _emotion_detection_model.xml);
+- the file containing the pre-trained neural network with the CK + dataset (ck+_emotion_detection_model.xml);
 - the file containing the pre-trained neural network with the Fer2013 dataset (Fer2013_emotion_detection_model.xml).
 
 These files are located in the /lib/ folder of the repository: before creating the config, copy the whole folder to the /target/jfx/app/ location.
